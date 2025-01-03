@@ -3,7 +3,7 @@ export interface Post {
   title: string;
   excerpt: string;
   content: string;
-  category: "ai" | "full-stack" | "blockchain";
+  category: "AI" | "Full-Stack Developer" | "Block-Chain Developer";
   date: string;
   readTime: number;
   author: string;
@@ -24,7 +24,7 @@ export const posts: Post[] = [
     As we look to the future, we can expect AI to play an even larger role in web development. We might see AI-assisted coding, where developers can describe features in natural language and have AI generate the corresponding code. Or perhaps we'll see AI taking on more of the design process, generating layouts and color schemes based on brand guidelines and user preferences.
 
     While AI brings exciting possibilities to web development, it's important to remember that human creativity and problem-solving skills remain crucial. The most effective approach will likely be a combination of AI capabilities and human expertise, creating web experiences that are both highly functional and creatively inspiring.`,
-    category: "ai",
+    category: "AI",
     date: "2023-07-01",
     readTime: 5,
     author: "Jane Doe",
@@ -53,7 +53,7 @@ export const posts: Post[] = [
     8. Adopt a DevOps Culture: Implement CI/CD pipelines, automated testing, and monitoring to ensure smooth deployments and quick identification of issues.
 
     Remember, scalability is not just about handling more users or data - it's also about maintaining code quality and developer productivity as your application grows. Regular refactoring, good documentation, and a solid testing strategy are all important aspects of building truly scalable applications.`,
-    category: "full-stack",
+    category: "Full-Stack Developer",
     date: "2023-07-05",
     readTime: 7,
     author: "John Smith",
@@ -84,7 +84,7 @@ export const posts: Post[] = [
     These are just a few examples of how blockchain technology is being applied beyond cryptocurrencies. As the technology matures, we can expect to see even more innovative use cases emerging across various sectors.
 
     While blockchain holds great promise, it's important to note that it's not a silver bullet for every problem. Careful consideration should be given to whether blockchain is the most appropriate solution for a given challenge. Nonetheless, the potential for blockchain to revolutionize various industries and processes is undeniable, and it will be exciting to see how this technology evolves in the coming years.`,
-    category: "blockchain",
+    category: "Block-Chain Developer",
     date: "2023-07-10",
     readTime: 6,
     author: "Alex Johnson",
