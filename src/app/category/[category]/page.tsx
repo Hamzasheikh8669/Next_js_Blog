@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { posts, Post } from "../../data/posts";
+import { posts  } from "../../data/posts";
 import { notFound } from "next/navigation";
 import { isNewPost } from "../../utils/dateUtils";
 
