@@ -47,10 +47,10 @@ export default function Comments() {
       <h2 className="text-2xl font-bold mb-4">Comments</h2>
       <div className="space-y-4 mb-8">
         {comments.map((comment) => (
-          <div key={comment.id} className="bg-white p-4 rounded-lg shadow">
+          <div key={comment.id} className="bg-black text-white  p-4 rounded-lg shadow-white border border-white">
             <div className="flex justify-between items-center mb-2">
               <span className="font-semibold">{comment.author}</span>
-              <span className="text-sm text-gray-500">{comment.date}</span>
+              <span className="text-sm text-gray-300">{comment.date}</span>
             </div>
             <p>{comment.content}</p>
           </div>
@@ -58,7 +58,7 @@ export default function Comments() {
       </div>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label htmlFor="author" className="block mb-2 font-medium">
+          <label htmlFor="author" className="block mb-2 font-medium" >
             Your Name
           </label>
           <input
@@ -66,7 +66,7 @@ export default function Comments() {
             id="author"
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
-            className="w-full px-3 py-2 border rounded-md"
+            className="w-full px-3 py-2 border rounded-md bg-black text-white"
             required
           />
         </div>
@@ -79,13 +79,13 @@ export default function Comments() {
             rows={4}
             value={newComment}
             onChange={(e) => setNewComment(e.target.value)}
-            className="w-full px-3 py-2 border rounded-md"
+            className="w-full px-3 py-2 border rounded-md bg-black text-white"
             required
           ></textarea>
         </div>
         <button
           type="submit"
-          className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors duration-300"
+          className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-500 transition-colors duration-300"
         >
           Post Comment
         </button>
