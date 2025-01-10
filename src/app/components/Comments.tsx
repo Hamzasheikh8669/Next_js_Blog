@@ -47,7 +47,10 @@ export default function Comments() {
       <h2 className="text-2xl font-bold mb-4">Comments</h2>
       <div className="space-y-4 mb-8">
         {comments.map((comment) => (
-          <div key={comment.id} className="bg-black text-white  p-4 rounded-lg shadow-white border border-white">
+          <div
+            key={comment.id}
+            className="bg-black text-white  p-4 rounded-lg shadow-white border border-white"
+          >
             <div className="flex justify-between items-center mb-2">
               <span className="font-semibold">{comment.author}</span>
               <span className="text-sm text-gray-300">{comment.date}</span>
@@ -58,7 +61,7 @@ export default function Comments() {
       </div>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label htmlFor="author" className="block mb-2 font-medium" >
+          <label htmlFor="author" className="block mb-2 font-medium">
             Your Name
           </label>
           <input
